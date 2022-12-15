@@ -1,5 +1,5 @@
 import React from "react";
-import { useRef, useMemo } from "react";
+import { useRef } from "react";
 import { styles, getCurrentURL } from "./functions";
 import { Link } from "react-router-dom";
 import SignOut from "./SignOut";
@@ -11,7 +11,8 @@ function BurgerMenu(props) {
   const secondLine = useRef(null);
   const pathURL = getCurrentURL();
   console.log("burger");
-
+  const authtoSignOut = props.auth;
+  const currentUSERIO = props.currentUser;
   const turnOn = () => {
     const translateOff = "translate--off";
     const firstLineTransition = "translate-y-1.5 rotate-45";
@@ -82,17 +83,17 @@ function BurgerMenu(props) {
           </li>
           <li>
             {" "}
-            {pathURL.includes("/signup") ? (
+            {/* {pathURL.includes("/signup") ? (
               " "
-            ) : props.currentUser ? (
+            ) : currentUSERIO ? (
               " "
             ) : (
               <Link to="/signup">Log In | Sign Up</Link>
-            )}
+            )} */}
           </li>
-          {props.currentUser ? <UserData /> : ""}
+          {/* {currentUSERIO ? <UserData /> : ""} */}
         </ul>
-        {props.currentUser ? <SignOut auth={props.auth} /> : ""}
+        {/* {currentUSERIO ? <SignOut auth={authtoSignOut} /> : ""} */}
       </nav>
     </div>
   );

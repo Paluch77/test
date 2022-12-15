@@ -25,6 +25,7 @@ function Header() {
 
   const userFirebase = auth.currentUser;
   useEffect(() => {
+    console.log(auth);
     if (reduxState.user.length < 1) {
       onAuthStateChanged(auth, async (user) => {
         let nickForDispatch;
