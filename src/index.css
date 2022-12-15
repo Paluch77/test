@@ -1,13 +1,39 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Red Hat";
+  src: url("../data/FontLight.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Red Hat";
+  src: url("../data/FontRegular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Red Hat";
+  src: url("../data/FontMedium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Red Hat";
+  src: url("../data/FontSemibold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Red Hat";
+  src: url("../data/FontBold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Red Hat";
+  src: url("../data/FontExtrabold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Red Hat";
+  src: url("../data/FontBlack.ttf");
+  font-weight: 900;
 }
